@@ -1,15 +1,15 @@
 {% include 'cooker/partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fas fa-cookie-bite main-logo-icon"></i>
-                    <span class="main-logo-text">Cooker</span>
-                </a>
-            </h1>
+    {% include 'cooker/partials/header.html' %}
+    {% include 'cooker/partials/search.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include 'cooker/partials/card.html' %}        
         </div>
-    </header>
+    </main>
+    {% include 'cooker/partials/footer.html' %}
+
 </body>
 </html>
