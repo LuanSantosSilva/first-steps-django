@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% include 'cooker/partials/head.html' %}
+    <title>{% block title %}{% endblock title %}Cooker</title>    
+</head>
+
+<body>
+    {% include 'cooker/partials/header.html' %}
+    {% include 'cooker/partials/search.html' %}
+
+    <main class="main-content-container">
+        {% block content %}{% endblock content %}
+    </main>
+    {% include 'cooker/partials/footer.html' %}
+
+</body>
+</html>
